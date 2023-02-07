@@ -1,3 +1,5 @@
+package tn.tuniprod.gestionmagasin;
+
 
 import java.util.Date;
 
@@ -10,7 +12,7 @@ import java.util.Date;
  * @author fares
  */
 public class Test {
-
+    
     public static void main(String[] args) {
         ProduitAlimentaire p1 = new ProduitAlimentaire();
         ProduitAlimentaire p2 = new ProduitAlimentaire(1021, "Lait", "Delice");
@@ -24,8 +26,9 @@ public class Test {
 //        p2.afficher();
 //        p3.prix=0.500f;
 //        p3.afficher();
+
         System.out.println(p2);
-        p2.expiration = new Date();
+        p2.setExpiration(new Date());
         System.out.println(p2);
     }
 

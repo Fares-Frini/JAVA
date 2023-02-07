@@ -1,3 +1,5 @@
+package tn.tuniprod.gestionmagasin;
+
 
 import java.util.Date;
 
@@ -12,11 +14,53 @@ import java.util.Date;
  */
 public class ProduitAlimentaire {
 
-    int id;
-    String libelle;
-    String marque;
-    float prix;
-    Date expiration;
+    private int id;
+    private String libelle;
+    private String marque;
+    private float prix;
+    private Date expiration;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public String getMarque() {
+        return marque;
+    }
+
+    public float getPrix() {
+        return prix;
+    }
+
+    public Date getExpiration() {
+        return expiration;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
+    }
+
+    public void setMarque(String marque) {
+        this.marque = marque;
+    }
+
+    public void setPrix(float prix) {
+        this.prix = prix;
+    }
+
+    public void setExpiration(Date expiration) {
+        this.expiration = expiration;
+    }
+    
+    
 
     public ProduitAlimentaire() {
     }
@@ -41,7 +85,7 @@ public class ProduitAlimentaire {
         
     }
 
-    @Override
+  @Override 
     public String toString() {
         
         return "Produit numéro: "+id+" de la marque : "+marque
